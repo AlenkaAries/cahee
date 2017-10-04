@@ -1,0 +1,50 @@
+.subscribe {
+    width: 100%;
+    background: url('../img/bg.png') no-repeat center top;
+&__mail-title {
+    padding-top: 145px;
+    font: 700 40px Raleway;
+    margin-bottom: 30px;
+}
+&__mail-subtitle {
+    max-width: 540px;
+    font: 300 17px Raleway;
+    margin-bottom: 30px;
+}
+&__mail-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+&__mail-input {
+    width: 570px;
+    height: 55px;
+    border: 1px solid $black;
+    padding-left: 15px; 
+    margin-right: 30px;
+    &:focus {
+        box-shadow: 0 0 10px $green; 
+    }
+}
+
+&__mail-btn {
+    width: 170px;
+    height: 55px;
+    margin-bottom: 163px;
+    background: $green;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px $black;
+    font: 300 20px Raleway;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+       color: $green; 
+       background: $red; 
+       box-shadow: 0 0 10px $green;   
+       transition: ease 0.3s;
+    }
+}
+}

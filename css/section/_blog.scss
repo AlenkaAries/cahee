@@ -1,0 +1,134 @@
+.blog {
+    width: 100%;
+    background: $fiolet;
+    &__blog {
+        width: 100%;
+        min-height: 864px;
+    }
+    &__blog-title {
+        padding-top: 100px;
+        font: 700 90px Raleway;
+        color: $white;
+        text-align: center;
+    }
+    &__blog-subtitle {
+        padding-top: 30px;
+        font: 300 17px Raleway;
+        color: $white;
+        text-align: center;
+        line-height: 25px;
+        max-width: 563px;
+        margin: 0 auto;
+    }
+    &__foto {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    &__foto-item {
+        position: relative;
+        width: 50%;
+        margin-right: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 0 10px $black;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover {
+        .blog__foto-overlay {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        }
+    }
+
+    &__foto-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    &__foto-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: $black;
+    }
+
+    &__foto-date {
+        width: 60px;
+        height: 60px;
+        background: #444b56;
+        border-radius: 4px;
+        color: $white;
+        font-size: 20px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 20%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    &__foto-number {
+        font: 700 32px Raleway;
+        color: $white;
+    }
+
+    &__foto-month {
+        font: 800 21px Raleway;
+        color: $white;
+    }
+
+    &__foto-title {
+        font: 700 20px Raleway;
+        color: $white;
+        position: absolute;
+        top: 65%;
+        left: 8%;
+    }
+
+    &__foto-author {
+        font: 300 13px Raleway;
+        color: $white;
+        position: absolute;
+        top: 85%;
+        left: 8%;
+    }
+
+    &__blog-btn {
+        width: 200px;
+        height: 55px;
+        background: $red;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 0 10px $black;
+        font: 300 20px Raleway;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        &:hover {
+            color: $red; 
+            background: $green; 
+            box-shadow: 0 0 10px $green;   
+            transition: ease 0.3s;
+    }
+    }
+}

@@ -1,0 +1,85 @@
+.contact {
+    width: 100%;
+    background: url('../img/img.png');
+    background-size: cover;
+    &__form-title {
+        font: 700 90px Raleway;
+        color: $black;
+        padding-top: 100px;
+        text-align: center;
+    }
+    &__form-subtitle {
+        width: 350px;
+        margin: 0 auto;
+        font: 300 17px Raleway;
+        color: $black;
+        padding-top: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__form-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        padding-bottom: 115px;
+    }
+    &__form-input {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__input-input {
+        width: 500px;
+        height: 50px;
+        background: $blue3;
+        border: none;
+        font: 300 15px Raleway;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        &:focus {
+            border-left: 5px solid $blue4;
+            background: $blue5;
+        }
+    }
+    &__input-textarea {
+        width: 500px;
+        height: 250px;
+        padding-top: 15px;
+        padding-left: 15px;
+        background: $blue3;
+        font: 300 15px Raleway;
+        border: none;
+        outline: none;
+        resize: none;
+        &:focus {
+            border-left: 5px solid $blue4;
+            background: $blue5;
+        }
+    }
+    &__address {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 100px; 
+    }
+    &__address-name {
+        font: 700 17px Raleway;
+        text-transform: uppercase;
+        margin-bottom: 5px; 
+    }
+    &__address-address {
+        font: 300 20px Raleway;
+        color: $black;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+

@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    height: 90px;
+    background: $black2;
+    &__info {
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info-copy {
+        font: 300 16px Raleway;
+        color: $gray;
+    }
+    &__info-logo {
+        font: 400 25px Pacifico;
+        color: $gray;
+    }
+    &__info-made {
+        font: 300 15px Raleway;
+        color: $gray;
+    }
+    &__info-made span {
+        color: $footerlove;
+    }
+
+}
